@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FooBar project</title>
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">Template</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <div class="col-md-7">
+                <h2>FrontEnd template for websites</h2>
+                <p>using node.js + brunch + bootstrap + jquery</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/screen.svg">
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="alert alert-info text-center" role="alert">
+            some small info
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="container">
+                <div class="col-md-4 text-center alert-warning">
+                    <span class="glyphicon glyphicon-eye-open big-icon"></span>
+                </div>
+                <div class="col-md-4 text-center alert-danger">
+                    <span class="glyphicon glyphicon-heart big-icon"></span>
+                </div>
+                <div class="col-md-4 text-center alert-info">
+                    <span class="glyphicon glyphicon-cloud big-icon"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3><span class="glyphicon glyphicon-file"></span> package.json file</h3>
+                <pre>
+{
+  "name": "brunch-app",
+  "description": "Brunch.io application",
+  "private": true,
+  "author": "Brunch",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "LOGGY_STACKS=true brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
+    "babel-brunch": "~6.0",
+    "babel-preset-latest": "^6",
+    "babel-preset-stage-0": "^6.22.0",
+    "bootstrap": "^3.3.7",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "jade-brunch": "^2.8.0",
+    "jquery": "^3.1.1",
+    "uglify-js-brunch": "^2"
+  }
+}
+                </pre>
+            </div>
+            <div class="col-md-6">
+                <h3><span class="glyphicon glyphicon-download-alt"></span> installing</h3>
+                <ul>
+                    <li>requires latest node.js <b>(v8.2.1)</b></li>
+                    <li>brunch <code>npm install -g brunch</code></li>
+
+                    <li><code>git clone https://github.com/neuthral/this_repository.git</code> - this will create a local copy of the source code for the app</li>
+                    <li><code>cd node-js-getting-started</code> - change directory into the local source code repository</li>
+                    <li><code>npm install</code> - install nessecary packages</li>
+                    <li><code>npm start</code> - starts local web server for development</li>
+
+                </ul>
+                <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+                <ul>
+                    <li><a href="https://www.brunch.io">brunch.io</a></li>
+                    <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
+                    <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
+                    <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom: 0px; background: #000;">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        require("application").init();
+    </script>
+    <script>
+        require('initialize');
+    </script>
+</body>
+
+</html>
